@@ -22,7 +22,6 @@ Dictionary structure:
 6. GANdenoising/checkpoint/*.npz
 
 
-
 Train:
 
 python main.py --mode=train
@@ -36,3 +35,5 @@ python main.py --mode=evaluate
 or just run main.py in pycharm by changing default settings to "evaluate"
 
 
+Citation：
+This project originated from my undergraduate graduation design, rather than a published paper.
