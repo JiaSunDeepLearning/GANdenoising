@@ -471,13 +471,13 @@ if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--mode', type=str, default='evaluate', help='srgan, evaluate')
+    parser.add_argument('--mode', type=str, default='evaluate', help='train, evaluate')
 
     args = parser.parse_args()
 
     tl.global_flag['mode'] = args.mode
 
-    if tl.global_flag['mode'] == 'srgan':
+    if tl.global_flag['mode'] == 'train':
         train()
     elif tl.global_flag['mode'] == 'evaluate':
         evaluate()
